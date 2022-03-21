@@ -5,27 +5,13 @@
    background-repeat: no-repeat;
 }
 
-@-webkit-keyframes tada {
+@-webkit-keyframes pulse {
    0% {
       transform: scaleX(1);
    }
 
-   10%,
-   20% {
-      transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
-   }
-
-   30%,
-   50%,
-   70%,
-   90% {
-      transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
-   }
-
-   40%,
-   60%,
-   80% {
-      transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+   50% {
+      transform: scale3d(1.1, 1.1, 1.1);
    }
 
    to {
@@ -33,119 +19,22 @@
    }
 }
 
-@keyframes tada {
+@keyframes pulse {
    0% {
-      transform: scaleX(1);
+      transform: scaleX(1.5);
    }
 
-   10%,
-   20% {
-      transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
-   }
-
-   30%,
-   50%,
-   70%,
-   90% {
-      transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
-   }
-
-   40%,
-   60%,
-   80% {
-      transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+   50% {
+      transform: scale3d(1.1, 1.1, 1.1);
    }
 
    to {
-      transform: scaleX(1);
+      transform: scaleX(1.5);
    }
 }
 
-.tada {
-   -webkit-animation-name: tada;
-   animation-name: tada;
+.pulse:hover {
+   -webkit-animation-name: pulse;
+   animation-name: pulse;
+   cursor: pointer;
 }
-/*
-.container {
-   max-width: 100%;
-   max-height: 100%;
-   display: block;
-   border: solid 1px rgb(0, 255, 0);
-   padding-inline: 5rem;
-   padding-top: 3.7rem;
-   padding-bottom: 0;
-}
-
-.no-padding-container {
-   max-width: 100%;
-   max-height: 100%;
-   display: contents;
-   border: solid 1px rgb(0, 255, 0);
-   padding-top: 0;
-   padding-bottom: 0;
-}
-
-.fit-img {
-   max-width: 100%;
-   max-height: 100%;
-   display: block;
-   border: solid 1px red;
-   margin-top: 0rem;
-}
-
-.fit-date {
-   border: solid 1px red;
-   display: block;
-   max-width: 100%;
-   max-height: 100%;
-}
-
-.fit-80s {
-   max-width: 100%;
-   max-height: 100%;
-   display: flex;
-   border: solid 1px red;
-   margin-top: 0rem;
-   margin-left: auto;
-   margin-right: auto;
-   width: 35%;
-   height: 35%;
-}
-.fit-map-img {
-   max-width: 100%;
-   max-height: 100%;
-   border: solid 1px red;
-   margin-top: 0rem;
-   margin-left: auto;
-   margin-right: auto;
-}
-
-.fit-map {
-   border: solid 1px red;
-   margin-top: 0rem;
-   width: 100%;
-   height: 100%;
-   margin-right: auto;
-}
-
-.fit-map-btn {
-}
-
-.fit-suggestion {
-   max-width: 100%;
-   max-height: 100%;
-   display: flex;
-   border: solid 1px red;
-   margin-top: 0rem;
-   margin-left: auto;
-   margin-right: auto;
-}
-
-.fit-footer {
-   max-width: 100%;
-   max-height: 100%;
-   display: block;
-   border: solid 1px red;
-   margin-right: auto;
-   margin-top: 3.7rem;
-} */

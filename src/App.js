@@ -14,7 +14,7 @@ import { Col, Container, Image, Row } from 'react-bootstrap';
 
 function App() {
    return (
-      <Container className='my-background ' fluid>
+      <Container className='my-background my-auto' fluid>
          <Container name='Fiesta Sorpresa'>
             <Row className='mx-auto'>
                <Col
@@ -116,6 +116,7 @@ function App() {
          <Container name='Mapa y Direccion'>
             <Row>
                <Col
+                  name='Direccion'
                   className='mx-auto'
                   xs={5}
                   sm={5}
@@ -127,6 +128,7 @@ function App() {
                   <Image fluid src={address} alt='Direccion' />
                </Col>
                <Col
+                  name='Mapa'
                   className='mx-auto'
                   xs={5}
                   sm={5}
@@ -134,9 +136,7 @@ function App() {
                   lg={6}
                   xl={6}
                   xxl={6}
-               >
-                  <Image fluid src={address} alt='Direccion' />
-               </Col>
+               ></Col>
             </Row>
          </Container>
          <Container name='Ser puntual'>
@@ -168,9 +168,9 @@ function App() {
             </Row>
          </Container>
          {/* <Container name='Cervezas'> */}
-         <Row>
+         <Row className='animation-pulse'>
             <Col
-               className='mx-auto'
+               className='mx-auto my-0 mt-3 pulse'
                xs={8}
                sm={8}
                md={12}
@@ -178,7 +178,7 @@ function App() {
                xl={12}
                xxl={12}
             >
-               <Image fluid src={beers} alt='Cervezas' />
+               <Image fluid className='pulse' src={beers} alt='Cervezas' />
             </Col>
          </Row>
          {/* </Container> */}
