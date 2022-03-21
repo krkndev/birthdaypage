@@ -1,7 +1,10 @@
-body {
-   background-image: url('./images/bgImage-min.jpg');
-   background-size: contain;
+.my-background {
+   /* background-image: url('./images/bgImage-min.jpg'); */
+   background-size: cover;
+   background-color: #1f1f1d;
+   background-repeat: no-repeat;
 }
+
 @-webkit-keyframes tada {
    0% {
       transform: scaleX(1);
