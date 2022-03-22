@@ -29,4 +29,4 @@ jobs:
         uses: sebastianpopp/discord-action@releases/v1
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: ${{ github.repository }} has been successfullly deployed at https://digital-invitations-97d61.web.app
+          message: ${{ '@everyone' }} ${{ github.repository }} has been successfullly deployed at https://digital-invitations-97d61.web.app
