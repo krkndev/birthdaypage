@@ -105,7 +105,9 @@ function App() {
           className='mx-auto'
           xs={5}
         >
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4946.055319256881!2d-103.60404978963332!3d20.29618863352923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8425f6ecc84ac359%3A0xd2accfafcb4cf237!2sNacional%20301%2C%2045765%20Gral%20Andr%C3%A9s%20Figueroa%2C%20Jal.!5e0!3m2!1sen!2smx!4v1647907934237!5m2!1sen!2smx" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy"></iframe>
+          <iframe
+            title='map'
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4946.055319256881!2d-103.60404978963332!3d20.29618863352923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8425f6ecc84ac359%3A0xd2accfafcb4cf237!2sNacional%20301%2C%2045765%20Gral%20Andr%C3%A9s%20Figueroa%2C%20Jal.!5e0!3m2!1sen!2smx!4v1647907934237!5m2!1sen!2smx" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy"></iframe>
         </Col>
       </Row>
       <Row>
