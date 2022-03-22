@@ -10,7 +10,7 @@ import suggestion from './images/suggestion.png';
 import beers from './images/beers.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Button, Col, Container, Image, Row } from 'react-bootstrap';
 
 function App() {
   return (
@@ -72,11 +72,7 @@ function App() {
         <Col
           className='mx-auto px-0'
           xs={10}
-          sm={10}
           md={12}
-          lg={12}
-          xl={12}
-          xxl={12}
         >
           <Image fluid className='px-2' src={date} alt='Fecha' />
         </Col>
@@ -84,26 +80,37 @@ function App() {
       <Row>
         <Col
           name='Direccion'
-          className='mx-auto'
-          xs={5}
-          md={6}
+          xs={4}
+          className='offset-sm-1'
         >
-          <Image fluid src={address} alt='Direccion' />
+          <Row>
+            <Col xs={12}>
+              <Image fluid src={address} alt='Direccion' />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12}
+              className='d-flex justify-content-center'>
+              <Button
+                variant='primary'
+                href="https://www.google.com/maps/dir//Nacional+301,+45765+Gral+Andr%C3%A9s+Figueroa,+Jal./@20.2949286,-103.6073145,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8425f6ecc84ac359:0xd2accfafcb4cf237!2m2!1d-103.6051258!2d20.2949236!3e0"
+              >
+                OBTENER DIRECCIONES
+              </Button>
+            </Col>
+          </Row>
         </Col>
         <Col
           name='Mapa'
           className='mx-auto'
           xs={5}
-          sm={5}
-          md={6}
-          lg={6}
-          xl={6}
-          xxl={6}
-        ></Col>
+        >
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4946.055319256881!2d-103.60404978963332!3d20.29618863352923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8425f6ecc84ac359%3A0xd2accfafcb4cf237!2sNacional%20301%2C%2045765%20Gral%20Andr%C3%A9s%20Figueroa%2C%20Jal.!5e0!3m2!1sen!2smx!4v1647907934237!5m2!1sen!2smx" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy"></iframe>
+        </Col>
       </Row>
       <Row>
         <Col
-          className='mx-auto'
+          className='mx-auto mt-3'
           xs={7}
           md={9}
           xxl={12}
@@ -127,7 +134,7 @@ function App() {
           <Image fluid className='pulse' src={beers} alt='Cervezas' />
         </Col>
       </Row>
-    </Container>
+    </Container >
   );
 }
 
