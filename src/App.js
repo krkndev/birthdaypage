@@ -67,7 +67,7 @@ function App() {
             <Col xs={12} className='d-flex justify-content-center'>
               <Button
                 variant='primary'
-                href='https://www.google.com/maps/dir//Nacional+301,+45765+Gral+Andr%C3%A9s+Figueroa,+Jal./@20.2949286,-103.6073145,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8425f6ecc84ac359:0xd2accfafcb4cf237!2m2!1d-103.6051258!2d20.2949236!3e0'
+                href='https://www.google.com/maps/dir//20.291663,-103.604979/@20.291663,-103.6071677,17z/data=!4m2!4m1!3e0'
               >
                 VER MAPA
               </Button>
@@ -77,7 +77,7 @@ function App() {
         <Col name='Mapa' className='mx-auto' xs={6}>
           <iframe
             title='map'
-            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4946.055319256881!2d-103.60404978963332!3d20.29618863352923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8425f6ecc84ac359%3A0xd2accfafcb4cf237!2sNacional%20301%2C%2045765%20Gral%20Andr%C3%A9s%20Figueroa%2C%20Jal.!5e0!3m2!1sen!2smx!4v1647907934237!5m2!1sen!2smx'
+            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.2076174121876!2d-103.60716088462193!3d20.29167171790577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMjDCsDE3JzMwLjAiTiAxMDPCsDM2JzE3LjkiVw!5e0!3m2!1sen!2smx!4v1647921359530!5m2!1sen!2smx'
             width='100%'
             height='100%'
             style={{ border: 0 }}
